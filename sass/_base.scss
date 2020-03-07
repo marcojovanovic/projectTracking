@@ -1,0 +1,62 @@
+@import 'variables';
+
+*,
+*::after,
+*::before{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+html{
+  font-size:60.5%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+  
+  @media only screen and(max-width:$bp-large){
+    
+    font-size:50%;
+  }
+}
+body{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.8rem;
+
+ 
+}
+
+a{
+   text-decoration:none;
+   color:#444;
+   cursor: pointer;
+}
+ul{
+  list-style: none;
+}
+
+img {
+  display:block;
+  width: 100%;
+  border-style: none;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+}
+p{
+  font-size:1.6rem;
+}
+
+button,
+input { 
+  overflow: visible;
+}
+
+textarea {
+  overflow: auto;
+}
+
