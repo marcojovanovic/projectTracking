@@ -621,7 +621,6 @@ table th {
     -webkit-box-shadow: 1px 1px 10px #a0a1ac;
             box-shadow: 1px 1px 10px #a0a1ac;
     display: none;
-    height: auto;
   }
 }
 
@@ -873,13 +872,14 @@ table th {
 
 @media only screen and (max-width: 37.5em) {
   .showcase-info {
+    margin-top: 12rem;
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 24.25em) {
   .showcase-info {
-    margin-top: 9rem;
+    margin-top: 15rem;
     padding: 1rem;
     width: 120%;
   }
@@ -918,12 +918,12 @@ table th {
   display: none;
 }
 
-#hamburger {
+.hamburger {
   display: none;
 }
 
 @media only screen and (max-width: 56.25em) {
-  #hamburger {
+  .hamburger {
     display: block;
   }
 }

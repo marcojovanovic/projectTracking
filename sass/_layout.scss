@@ -43,7 +43,7 @@
       text-align: center;
       box-shadow: 1px 1px 10px $grayishBlue;
       display: none;
-      height: auto;
+     
 
 
     }
@@ -294,12 +294,12 @@
     width: 80%;
 
     @media only screen and(max-width:$bp-small) {
-
+      margin-top: 12rem;
       width: 100%;
     }
 
     @media only screen and(max-width:$bp-smallest) {
-      margin-top: 9rem; 
+      margin-top: 15rem; 
       padding: 1rem; 
       width: 120%;
     }
@@ -337,7 +337,7 @@
   display: none;
 }
 
-#hamburger {
+.hamburger {
   display: none;
 
   @media only screen and(max-width:$bp-medium) {
