@@ -880,7 +880,7 @@ table th {
 @media only screen and (max-width: 24.25em) {
   .showcase-info {
     margin-top: 15rem;
-    padding: 1rem;
+    margin-left: 2rem !important;
     width: 120%;
   }
 }

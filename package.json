@@ -1,0 +1,19 @@
+{
+  "name": "projecttrackingfrontendmentor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcojovanovic/projectTracking.git"
+  },
+  "author": "'mare'",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcojovanovic/projectTracking/issues"
+  },
+  "homepage": "https://github.com/marcojovanovic/projectTracking#readme"
+}

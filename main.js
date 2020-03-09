@@ -1,4 +1,4 @@
-let hamburger = document.querySelector('.hamburger')
+let hamburger = document.querySelector('#hamburger')
 let close = document.querySelector('#close')
 let navList = document.querySelector('.nav-list')
 
@@ -10,8 +10,9 @@ hamburger.addEventListener('click',()=>{
 
   navList.classList.toggle('show')
   hamburger.classList.add('hide')
-  close.classList.remove('hide')
-  close.classList.add('show')
+  close.classList.toggle('hide')
+
+  
 })
 
 

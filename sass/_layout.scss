@@ -300,7 +300,7 @@
 
     @media only screen and(max-width:$bp-smallest) {
       margin-top: 15rem; 
-      padding: 1rem; 
+      margin-left: 2rem !important; 
       width: 120%;
     }
   }
