@@ -1,61 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+    <title>Project Tracking</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-    integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Barlow:400,700&display=swap" rel="stylesheet">
+        <div>
+           <img class="nav-img" src="./img/logo.svg" alt="logo" />
+        </div>
+          
 
-  <link href="css/main.css" rel="stylesheet" />
-  <title>Project Tracking</title>
-</head>
+    
 
-<body>
-  
-    <div class="container">
-    <div class='nav'>
-      <img src='img/logo.svg' alt='' class='nav-logo' />
-      <ul class='nav-list'>
-        <li class='nav-list--item'><a class='nav-link' href='#'>Product</a></li>
-        <li class='nav-list--item'><a class='nav-link' href='#'>Features</a></li>
-        <li class='nav-list--item'><a class='nav-link' href='#'>Pricing</a></li>
-        <li class='nav-list--item'><svg height="5" width="5">
-          <circle cx="2.5" cy="2.5" r="2.5" fill='hsl(231, 7%, 65%)'/>
-        </svg></li>
-        <li class='nav-list--item'><a class='nav-link' id='grey' href='#'>Login</a></li>
-      </ul>
-       
-       <div class='label'>
-        <span><img src="img/icon-hamburger.svg" id='hamburger' alt="Menu"></span>
-        <span><img class='hide' src="img/icon-close.svg" id='close' alt="Close Menu"></span>
-       </div>
-       
-       
-    </div>
-     <div class='showcase'>
-       <div class='showcase-info'>
-         <btn class='btn showcase-new'>new</btn><span class='showcase-span'>Monograph Dashboard</span>
-         <h1 class='showcase-title'>Powerful insights into your team</h1>
-         <p class='showcase-text'>Project planning and time tracking for agile teams</p>
-         <div class='showcase-flex'>
-            <button class='btn showcase-btn mt-2'><a href='#'>Schedule a demo </a></button><span class='showcase-preview'>To See a Preview</span>
-         </div>
-        
-       </div>
-       <div class='showcase-portrait'>
-           <img src='img/illustration-devices.svg' class='showcase-img' alt='' />
-           <div class='shape'></div>
-       </div>
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="#">Product</a></li>
+          <li class="nav-list-item"><a href="#">Features</a></li>
+          <li class="nav-list-item"><a href="#">Pricing</a></li>
+          <li class="nav-list-item"><a href="#" class="special">Login</a></li>
+        </ul>
+
+          <button class='hamburger'>
+          <img class='icon-hamburger' src='./img/icon-hamburger.svg' alt='hamburger-icon'>
+          <img class='icon-close' src='./img/icon-close.svg' alt='hamburger-icon'>
+        </button>
       </div>
-      
-     </div> 
-  </div>
-  
-    <script src="main.js"></script>
-</body>
+    </nav>
 
+    <main>
+      <div class="container">
+        <div>
+          <h3><span class="nav-span">New</span>Monograph Dashboard</h3>
+          <h1>Powerfull insights into your team</h1>
+
+          <p>
+            Project planning and time tracking for agile teams
+          </p>
+          <div class="div-btn">
+            <button class="btn btn-main">Schedule a demo</button>
+            <h3>to see a live preview</h3>
+          </div>
+        </div>
+
+        <div>
+          <img class="main-img" src="./img/illustration-devices.svg" alt="" />
+        </div>
+      </div>
+    </main>
+
+
+
+
+    <script>
+
+      const hamburger = document.querySelector('.hamburger')
+      const body = document.body
+      const navList = document.querySelector('.nav-list')
+
+      hamburger.addEventListener('click', ()=>{
+
+
+        body.classList.toggle('show-nav')
+        navList.classList.toggle('show-list')
+
+      })
+
+
+
+
+
+    </script>
+  </body>
 </html>
